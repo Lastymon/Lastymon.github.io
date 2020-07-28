@@ -1,9 +1,15 @@
 body {
     background-color: rgb(222,222,222);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.externalContainer {
+span {
+    margin: 0 20px;
+}
+
+/* Personal information and Positions*/
+
+.externalContainer, .content{
     display: flex;
     justify-content: center;
 }
@@ -16,15 +22,15 @@ body {
 }
 
 .profilePicture {
-    height: 410px;
+    height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .imgPosition {
-    width: 300px;
     height: 300px;
+    width: 300px;
     padding: 5px;
     /* border: 4.5px red solid; */
     background: linear-gradient(to top, rgb(12, 62, 200), rgb(187, 50, 25));
@@ -36,6 +42,7 @@ body {
     align-items: center;
     font-size: 2em;
     font-weight: bold;
+    /* color: #461f00; */
 }
 
 .profession {
@@ -43,19 +50,78 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.5em;
-    font-weight: bold   ;
+    font-weight: bold;
+    /* color: #7a3700; */
 }
 
 .summary {
+    height: 80px;
+    margin: 0 0 20px 0;
     display: flex;
     align-items: center;
     text-align: center;
     font-size: 1.1em;
+    /* color: #b95300; */
+}
+
+/* Content of the CV */
+
+.contentPosition {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 95%;
+}
+
+.divider {
+    margin: 0 10px;
+    padding: 5px;
+    height: 9px;
+    width: 100%;
+    background: linear-gradient(to top, rgb(12, 62, 200), rgb(187, 50, 25));
+    border-radius: 5px;
+}
+
+.contentTitle {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.skills, .exp, .edu {
+    width: 80%;
+}
+
+.skillsTitle, .expTitle, .eduTitle {
+    margin: 16px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.skillsContent, .expContent {
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+.expTime, .institution {
+    margin: 20px;
+    font-size: 1.2em;
 }
 
 .contactData {
     height: 80px;
-    display: flex;
-    align-items: center;
-    font-size: 1.1em;
+    margin: 16px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
+
+.contactLogo {
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
+}
+
+/* .logo {
+    
+} */
